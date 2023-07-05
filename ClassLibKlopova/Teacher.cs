@@ -24,7 +24,7 @@ namespace ClassLibKlopova
         public void Show()
         {
             Console.WriteLine(
-                 $"\tНазвание: {Name}, преподаваемая дисциплина - {Course}");
+                 $"\tФИО: {Name}, преподаваемая дисциплина - {Course}");
         }
         public int CompareTo(Teacher? other)
         {

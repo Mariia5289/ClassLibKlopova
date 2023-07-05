@@ -8,6 +8,7 @@ using System.Xml.Linq;
 
 namespace ClassLibKlopova
 {
+    //Клопова 31 ИС
     public class College//основной класс
     {
         // класс колледж
