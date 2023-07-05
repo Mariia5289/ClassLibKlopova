@@ -16,7 +16,7 @@
         {
             Console.WriteLine($"Колледж: название - {Name}, адрес - {Address}");
             Console.WriteLine("Список преподавателей:");
-
+            Teachers.Sort();
             foreach (Teacher teacher in Teachers)
             {
                 teacher.Show();

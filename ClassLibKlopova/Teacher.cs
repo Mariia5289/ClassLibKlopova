@@ -8,7 +8,7 @@ namespace ClassLibKlopova
 {
     //Клопова 31 ИС
     //Класс Преподаватель
-    public class Teacher
+    public class Teacher : IComparable<Teacher>
     {
         public string Name { get; set; }//ФИО
         public string Course { get; set; }//преподаваемая дисциплина
@@ -21,6 +21,10 @@ namespace ClassLibKlopova
         {
             Console.WriteLine(
                  $"\tНазвание: {Name}, преподаваемая дисциплина - {Course}");
+        }
+        public int CompareTo(Teacher? other)
+        {
+            return Name.CompareTo(other.Name);
         }
     }
 }
